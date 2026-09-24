@@ -19,3 +19,18 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+# editor / IDE
+.vscode/
+.idea/
+
+# AI agent configs (per-project, not part of repo)
+AGENTS.md
+CLAUDE.md
+.github/copilot-instructions.md
+
+# OS / scratch files
+Thumbs.db
+*.swp
+*.bak
+*~

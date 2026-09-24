@@ -1,7 +1,10 @@
 {
   "name": "bash-tutorial",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "从里层逻辑到实战的 Bash 中文教程",
+  "author": "wxy1123",
+  "license": "MIT",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

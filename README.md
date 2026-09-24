@@ -1,49 +1,45 @@
-# Starlight Starter Kit: Basics
+# Bash 教程：从里层逻辑到实战
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+[![Deploy to GitHub Pages](https://github.com/wxy1123/bash-tutorial/actions/workflows/deploy.yml/badge.svg)](https://github.com/wxy1123/bash-tutorial/actions/workflows/deploy.yml)
 
-```
-npm create astro@latest -- --template starlight
-```
+一份系统讲解 Bash 的中文教程，覆盖原理、符号、管道、coreutils、脚本技巧与实战。
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+📖 **在线阅读**：https://wxy1123.github.io/bash-tutorial/
 
-## 🚀 Project Structure
+## 目录
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+1. [里层逻辑](https://wxy1123.github.io/bash-tutorial/inner-logic/) — 字符串、标准流、退出码、进程模型
+2. [特殊符号](https://wxy1123.github.io/bash-tutorial/special-symbols/) — `$` `$( )` `[[ ]]` `&&` `>`
+3. [管道与过滤器](https://wxy1123.github.io/bash-tutorial/pipes-filters/) — Unix 哲学、过滤器配方
+4. [Coreutils 工具组合](https://wxy1123.github.io/bash-tutorial/coreutils/) — grep/sed/awk/xargs/find
+5. [脚本技巧](https://wxy1123.github.io/bash-tutorial/scripting/) — `set -euo pipefail` + trap + 调试
+6. [实战例子](https://wxy1123.github.io/bash-tutorial/examples/) — 日志、备份、监控、并发
 
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   └── docs/
-│   └── content.config.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
+## 本地开发
+
+```bash
+npm install
+npm run dev    # http://localhost:4321
 ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+## 构建
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+```bash
+npm run build
+```
 
-Static assets, like favicons, can be placed in the `public/` directory.
+构建产物在 `dist/`，可部署到任何静态托管。
 
-## 🧞 Commands
+## 技术栈
 
-All commands are run from the root of the project, from a terminal:
+- [Astro 7](https://astro.build/)
+- [Starlight](https://starlight.astro.build/)
+- GitHub Pages（通过 GitHub Actions 自动部署）
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## 贡献
 
-## 👀 Want to learn more?
+欢迎提 Issue / PR。修改 `src/content/docs/` 下的 Markdown 文件即可。
 
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+## 许可
+
+[MIT](LICENSE)
